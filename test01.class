@@ -1,0 +1,15 @@
+
+// 하나의 소스파일에 여러개의 클래스 선언가능.
+// 단, public으로 선언한 클래스는 하나만 존재
+// public으로 정의된 class는 소스파일명과 같아야 함.
+// 즉, B는 안된다는 이야기.
+
+public class A{}
+class B{}
+class C{
+	class D{}
+	// class안에 class를 생성하면 $표시로 된다.
+}
+
+// class A{}
+// public class B{}     ----(X)
